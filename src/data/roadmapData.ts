@@ -1,0 +1,217 @@
+// ==========================================
+// ROADMAP INITIAL DATA (NIGERIA: LAGOS & ABUJA)
+// ==========================================
+// Pre-configured roadmap milestones focusing on Lagos and Abuja.
+// Each milestone includes realistic local landmarks, subtasks, and tailored gradients.
+
+import type { RoadmapItem } from '../types/roadmap';
+
+export const INITIAL_NIGERIA_ROADMAP: RoadmapItem[] = [
+  // ----------------------------------------------------
+  // LAGOS: PHASE 1
+  // ----------------------------------------------------
+  {
+    id: 'ng-1',
+    title: 'Lagos Smart Transit & Multi-Modal Cowry Card Sync',
+    description: 'Integrate the Lagos Blue Line, Red Line, and BRT networks into a unified digital ticketing API with Cowry card NFC and barcode mobile scanning.',
+    quarter: 'Q1 2026',
+    phase: 'Phase 1: Lagos Core & Pilot',
+    status: 'completed',
+    region: 'Lagos',
+    sector: 'Transport & Mobility',
+    locationDetails: 'Marina, Ikeja, Mile 2 & Yaba Interchange',
+    targetDate: 'Jan - Mar 2026',
+    votes: 142,
+    hasVoted: false,
+    gradientTheme: {
+      badgeBg: 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30',
+      badgeText: 'text-emerald-600 dark:text-emerald-400',
+      borderGlow: 'hover:border-emerald-500/60 hover:shadow-emerald-500/15',
+      progressGradient: 'from-emerald-500 via-teal-500 to-green-500',
+      iconGradient: 'from-emerald-600 to-teal-500',
+      cardAccent: 'from-emerald-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't1-1', title: 'Cowry NFC payment gateway integration', completed: true },
+      { id: 't1-2', title: 'Lagos Blue Line Marina terminal live validation', completed: true },
+      { id: 't1-3', title: 'Ikeja Red Line station turnstile API testing', completed: true },
+      { id: 't1-4', title: 'Real-time bus arrival schedules via SMS & App', completed: true },
+    ],
+  },
+  {
+    id: 'ng-2',
+    title: 'Yaba Silicon Lagoon Tech Incubator & Fiber Ring',
+    description: 'Deploy redundant underground optical fiber loops and uninterrupted solar hybrid power units across Herbert Macaulay Way to support 250+ tech startups.',
+    quarter: 'Q1 2026',
+    phase: 'Phase 1: Lagos Core & Pilot',
+    status: 'completed',
+    region: 'Lagos',
+    sector: 'Tech Hubs & Innovation',
+    locationDetails: 'Yaba, Sabo, Commercial Avenue',
+    targetDate: 'Feb - Mar 2026',
+    votes: 98,
+    hasVoted: false,
+    gradientTheme: {
+      badgeBg: 'bg-cyan-500/15 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30',
+      badgeText: 'text-cyan-600 dark:text-cyan-400',
+      borderGlow: 'hover:border-cyan-500/60 hover:shadow-cyan-500/15',
+      progressGradient: 'from-cyan-500 via-blue-500 to-indigo-500',
+      iconGradient: 'from-cyan-600 to-blue-500',
+      cardAccent: 'from-cyan-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't2-1', title: '10 Gbps redundant Metro fiber loop deployment', completed: true },
+      { id: 't2-2', title: 'Solar microgrid & battery storage installation', completed: true },
+      { id: 't2-3', title: 'Public developer sandbox & API documentation', completed: true },
+      { id: 't2-4', title: 'Yaba Tech co-working hub pass validation', completed: true },
+    ],
+  },
+
+  // ----------------------------------------------------
+  // ABUJA: PHASE 2
+  // ----------------------------------------------------
+  {
+    id: 'ng-3',
+    title: 'Abuja FCT Central Business District Digital One-Stop',
+    description: 'Automate municipal building permits, vehicle licensing, and tax remittances with direct NIBSS / NQR bank instant settlement across the Federal Capital Territory.',
+    quarter: 'Q2 2026',
+    phase: 'Phase 2: Abuja Federal Rollout',
+    status: 'in-progress',
+    region: 'Abuja',
+    sector: 'Civic & FCT Services',
+    locationDetails: 'Central Area, Garki Area 11 & Wuse II',
+    targetDate: 'Apr - Jun 2026',
+    votes: 185,
+    hasVoted: true,
+    gradientTheme: {
+      badgeBg: 'bg-purple-500/15 text-purple-600 dark:text-purple-400 border border-purple-500/30',
+      badgeText: 'text-purple-600 dark:text-purple-400',
+      borderGlow: 'hover:border-purple-500/60 hover:shadow-purple-500/15',
+      progressGradient: 'from-purple-600 via-fuchsia-500 to-pink-500',
+      iconGradient: 'from-purple-600 to-pink-500',
+      cardAccent: 'from-purple-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't3-1', title: 'Single Treasury FCT gateway integration', completed: true },
+      { id: 't3-2', title: 'NIBSS NQR quick scan checkout for civic fees', completed: true },
+      { id: 't3-3', title: 'Wuse II & Garki pilot merchant verification', completed: false },
+      { id: 't3-4', title: 'Public citizen self-service digital kiosk kiosks', completed: false },
+    ],
+  },
+  {
+    id: 'ng-4',
+    title: 'Abuja Light Rail & Nnamdi Azikiwe Airport Link',
+    description: 'Modernize the Abuja Rail Mass Transit (ARMT) passenger experience with contact-free turnstiles, real-time arrival signs, and luggage security tracking.',
+    quarter: 'Q2 2026',
+    phase: 'Phase 2: Abuja Federal Rollout',
+    status: 'in-progress',
+    region: 'Abuja',
+    sector: 'Transport & Mobility',
+    locationDetails: 'Idu Industrial Station & Airport Terminal',
+    targetDate: 'May - Jul 2026',
+    votes: 119,
+    hasVoted: false,
+    gradientTheme: {
+      badgeBg: 'bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/30',
+      badgeText: 'text-blue-600 dark:text-blue-400',
+      borderGlow: 'hover:border-blue-500/60 hover:shadow-blue-500/15',
+      progressGradient: 'from-blue-600 via-indigo-500 to-cyan-500',
+      iconGradient: 'from-blue-600 to-indigo-500',
+      cardAccent: 'from-blue-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't4-1', title: 'Idu interchange automated e-gate installation', completed: true },
+      { id: 't4-2', title: 'Nnamdi Azikiwe Airport terminal passenger displays', completed: true },
+      { id: 't4-3', title: 'Real-time train GPS tracker & commuter notifications', completed: false },
+      { id: 't4-4', title: 'Mobile booking app for Abuja Metro riders', completed: false },
+    ],
+  },
+
+  // ----------------------------------------------------
+  // LAGOS-ABUJA CORRIDOR & PAN-NIGERIA: PHASE 3 & 4
+  // ----------------------------------------------------
+  {
+    id: 'ng-5',
+    title: 'Lagos-Abuja Interstate Express Freight & Cold Chain',
+    description: 'Establish smart GPS telemetry checkpoints, solar cold-storage transit hubs, and automated e-waybills connecting Lagos shipping ports directly to Abuja distribution centers.',
+    quarter: 'Q3 2026',
+    phase: 'Phase 3: Interstate Connection',
+    status: 'planned',
+    region: 'Lagos-Abuja Corridor',
+    sector: 'Commerce & Logistics',
+    locationDetails: 'Lekki Port -> Ibadan -> Lokoja -> Abuja Corridor',
+    targetDate: 'Jul - Sep 2026',
+    votes: 164,
+    hasVoted: false,
+    gradientTheme: {
+      badgeBg: 'bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30',
+      badgeText: 'text-amber-600 dark:text-amber-400',
+      borderGlow: 'hover:border-amber-500/60 hover:shadow-amber-500/15',
+      progressGradient: 'from-amber-500 via-orange-500 to-rose-500',
+      iconGradient: 'from-amber-600 to-orange-500',
+      cardAccent: 'from-amber-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't5-1', title: 'Digital manifest & customs clearance API at Lekki', completed: false },
+      { id: 't5-2', title: 'Lokoja highway solar-powered cold store testbed', completed: false },
+      { id: 't5-3', title: 'Interstate haulage fleet live GPS & fuel telemetry', completed: false },
+      { id: 't5-4', title: 'Abuja central cargo depot receiving dock automation', completed: false },
+    ],
+  },
+  {
+    id: 'ng-6',
+    title: 'Naira Instant Settlement & USSD Offline Mesh',
+    description: 'Ensure 99.99% payment uptime in high-density markets with USSD fallback (*966# / *737#), offline transaction queueing, and low-latency POS terminals.',
+    quarter: 'Q3 2026',
+    phase: 'Phase 3: Interstate Connection',
+    status: 'planned',
+    region: 'Pan-Nigeria',
+    sector: 'Fintech & Naira Payments',
+    locationDetails: 'Balogun & Alaba (Lagos), Wuse Market (Abuja)',
+    targetDate: 'Aug - Oct 2026',
+    votes: 210,
+    hasVoted: false,
+    gradientTheme: {
+      badgeBg: 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30',
+      badgeText: 'text-rose-600 dark:text-rose-400',
+      borderGlow: 'hover:border-rose-500/60 hover:shadow-rose-500/15',
+      progressGradient: 'from-rose-500 via-pink-500 to-purple-600',
+      iconGradient: 'from-rose-600 to-pink-500',
+      cardAccent: 'from-rose-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't6-1', title: 'Direct NIBSS instant settlement micro-service', completed: false },
+      { id: 't6-2', title: 'Telco USSD gateway zero-data fallback integration', completed: false },
+      { id: 't6-3', title: 'Local POS offline encrypted receipt queueing', completed: false },
+      { id: 't6-4', title: 'Market trader instant voice confirmation speakers', completed: false },
+    ],
+  },
+  {
+    id: 'ng-7',
+    title: 'Clean Energy & Solar Microgrids for Tech Clusters',
+    description: 'Deploy commercial-grade rooftop solar arrays and lithium battery storage to guarantee 24/7 power for tech incubators and transit hubs across Victoria Island and Maitama.',
+    quarter: 'Q4 2026',
+    phase: 'Phase 4: Sustainability & Scale',
+    status: 'planned',
+    region: 'Pan-Nigeria',
+    sector: 'Infrastructure & Clean Energy',
+    locationDetails: 'Victoria Island (Lagos) & Maitama (Abuja)',
+    targetDate: 'Oct - Dec 2026',
+    votes: 133,
+    hasVoted: false,
+    gradientTheme: {
+      badgeBg: 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30',
+      badgeText: 'text-emerald-600 dark:text-emerald-400',
+      borderGlow: 'hover:border-emerald-500/60 hover:shadow-emerald-500/15',
+      progressGradient: 'from-emerald-500 via-teal-500 to-cyan-500',
+      iconGradient: 'from-emerald-600 to-teal-500',
+      cardAccent: 'from-emerald-500/20 via-transparent to-transparent',
+    },
+    tasks: [
+      { id: 't7-1', title: 'Solar irradiance mapping for commercial rooftops', completed: false },
+      { id: 't7-2', title: 'Smart inverter cloud monitoring dashboards', completed: false },
+      { id: 't7-3', title: 'Peak-shaving automated generator failover logic', completed: false },
+      { id: 't7-4', title: 'Green carbon credit tracking for enterprise hubs', completed: false },
+    ],
+  },
+];
